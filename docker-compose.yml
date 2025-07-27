@@ -10,6 +10,7 @@ services:
       - fs-app
     
   backend:
+    image: 886436962079.dkr.ecr.ap-south-1.amazonaws.com/fullstack-testing:backend
     build: ./backend
     container_name: node-app-cont
     ports:
@@ -22,6 +23,7 @@ services:
       - fs-app
 
   frontend:
+    image: 886436962079.dkr.ecr.ap-south-1.amazonaws.com/fullstack-testing:frontend
     build: ./frontend
     container_name: react-app-cont
     ports:
